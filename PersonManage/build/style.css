@@ -1,0 +1,174 @@
+body,html {
+	width: 100%;
+	background: #f4f5f5;
+}
+ul,ol{
+	list-style:none;
+	margin:0;
+	padding: 0;
+}
+.float-fix:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.get-out{text-indent:-9999px;font-size:0;}
+.clearfix:before,.clearfix:after {display:table;line-height:0;content:"";}
+.clearfix:after {clear:both;}
+.clearfix {*zoom: 1;}
+
+#app {
+	width: 90%;
+	margin:0 auto;
+}
+.titleH3 {
+	width: 100%;
+	text-align: center;
+	color: #1b97df;
+	font-size: 1.4rem;
+}
+.choseHeader {
+	width: 100%;
+	overflow: hidden;
+	margin:1rem auto 0.75rem;
+}
+.choseHeader li {
+	float: left;
+	width: 33%;
+	font-size: 0.8rem;
+}
+/*@media screen and (max-width: 376px)  {
+	.choseHeader li {
+		float: left;
+		width: 100%;
+		height: 1.1rem;
+		font-size: 0.8rem;
+	}
+}*/
+.choseHeader li input {
+	width: 80%;
+	height: 1.1rem;
+}
+.choseHeader li label {
+	width: 50%;
+	height: 1.1rem;
+}
+.choseHeader li select {
+	width: 50%;
+	height: 1.1rem;
+}
+.personBox {
+
+}
+.allItem {
+	width: 100%;
+	border: 2px solid #b0c4de;
+	border-radius: 4px;
+	margin-bottom: 100px;
+}
+.itemTh {
+	font-size: 0.8rem;
+}
+.itemTd{
+	width: 20%;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.itemBtn {
+    width: 2rem;
+    font-size:0.8rem;
+    color: #1e90ff;
+    display: inline-block;
+}
+.addForm {
+	width: 40%;
+	margin:0 auto;
+	font-size: 0.8rem;
+}
+.addForm label {
+	width: 90px;
+	line-height: 1.2rem;
+	vertical-align: middle;
+}
+.addForm input, .addForm select, .addForm textarea {
+    width: 200px;
+    margin: 0 0 10px 15px;
+    /*display: block;*/
+    height: 1.2rem;
+}
+.manDescriDiv {
+	/*position: relative;*/
+}
+.manDescri {
+	position: relative;	
+	top:-22px;
+}
+.tips{
+	display: none;
+}
+.addForm button {
+    padding: 3px 20px;
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 5px ;
+    display: block;
+}
+.overLay {
+    text-align: center;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 0.8rem;
+    animation-name: detailMerge;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+.overLay table {
+	width: 100%;
+	font-size: 0.8rem;
+}
+.overLay tr {
+	line-height: 1.5em;
+	font-size: 0.8rem;
+}
+.overLay th {
+	width: 40%;
+	font-weight: normal;
+}
+.overLay td {
+	width: 60%;
+	text-align: center;
+}
+.overLay input, .overLay select, .overLay textarea {
+	width: 200px;
+}
+.overLay button {
+	padding: 3px 20px;
+	background-color: #1e90ff;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+	margin: 5px auto;
+	display: inline-block;
+}
+
+@keyframes detailMerge {
+	from {
+		background-color: rgba(255, 255, 255, 0);
+	}
+	to {
+		background-color: rgba(255, 255, 255, 0.95);
+	}
+}
+@-webkit-keyframes detailMerge {
+	from {
+		background-color: rgba(255, 255, 255, 0);
+	}
+	to {
+		background-color: rgba(255, 255, 255, 0.8);
+	}	
+}
